@@ -1,15 +1,16 @@
 <?php
 
-class Izypayment {
+class Izypayment
+{
     protected $key;
     const END_POINT = 'https://www.izypayment.com/api/v1';
-    
+
     public function __construct($key) {
-        $this->key = $key;   
+        $this->key = $key;
     }
-    
+
     /**
-    * Make a payment 
+    * Make a payment
     *
     * @param $params array of POST parameters
     *
@@ -61,5 +62,4 @@ class Izypayment {
             return $data;
         }
     }
-
-?>
+}
